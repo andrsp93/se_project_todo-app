@@ -20,8 +20,7 @@ class PopupWithForm extends Popup {
       evt.preventDefault();
       const inputValues = this._getInputValues();
 
-      //TODO - pass result of _getInputValues to submission handler
-      this.handleFormSubmit(evt);
+      this.handleFormSubmit(inputValues);
     });
   }
 }
